@@ -1,14 +1,24 @@
 # Basics 
 broker.id=1.
+
 num.network.threads=4.
+
 num.io.threads=8.
+
 socket.send.buffer.bytes=102400.
+
 socket.receive.buffer.bytes=102400.
+
 socket.request.max.bytes=104857600.
+
 max.connections.per.ip=20.
+
 message.max.bytes=15728640.
+
 num.partitions=3.
+
 num.recovery.threads.per.data.dir=2.
+
 #queued.max.requests= .
 
 
