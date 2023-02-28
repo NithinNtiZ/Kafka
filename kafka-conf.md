@@ -12,7 +12,7 @@
 
 **log.segment.ms:** This setting specifies the time interval for rolling new log segments in milliseconds.
 
-**log.flush.interval.ms:** This setting specifies the maximum time in milliseconds between log flushes.
+**log.flush.interval.ms:** This setting specifies the maximum time in milliseconds between log flushes..
 
 **log.flush.offset.checkpoint.interval.ms:** This setting specifies the time interval between offset checkpoints in milliseconds.
 
