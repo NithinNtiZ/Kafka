@@ -1,6 +1,6 @@
 # log configuration kafka
 
-**log.dirs:** This setting specifies the directories in which the Kafka broker will store its log files. You can specify multiple directories by separating them with commas.
+**log.dirs:** -This setting specifies the directories in which the Kafka broker will store its log files. You can specify multiple directories by separating them with commas.
 
 **log.retention.hours:** This setting specifies the number of hours for which log files will be retained. Once this time has passed, log files will be deleted.
 

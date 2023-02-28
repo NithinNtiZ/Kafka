@@ -29,7 +29,7 @@ log.cleanup.policy=delete
 log.retention.check.interval.ms=300000
 
 # Replication Configuration
-default.replication.factor=2
+default.replication.factor=2 
 min.insync.replicas=2
 replica.lag.time.max.ms=60000
 replica.fetch.max.bytes=15728640
