@@ -1,25 +1,15 @@
 # Basics 
-broker.id=1.
-
-num.network.threads=4.
-
-num.io.threads=8.
-
-socket.send.buffer.bytes=102400.
-
-socket.receive.buffer.bytes=102400.
-
-socket.request.max.bytes=104857600.
-
-max.connections.per.ip=20.
-
-message.max.bytes=15728640.
-
-num.partitions=3.
-
-num.recovery.threads.per.data.dir=2.
-
-#queued.max.requests= .
+broker.id=1.  
+num.network.threads=4.  
+num.io.threads=8.  
+socket.send.buffer.bytes=102400.  
+socket.receive.buffer.bytes=102400.  
+socket.request.max.bytes=104857600.  
+max.connections.per.ip=20.  
+message.max.bytes=15728640.  
+num.partitions=3.  
+num.recovery.threads.per.data.dir=2.  
+#queued.max.requests= .  
 
 
 # Memory Configuration
@@ -43,30 +33,30 @@ log.cleanup.policy=delete.
 log.retention.check.interval.ms=300000.  
 
 # Replication Configuration
-default.replication.factor=2.
-min.insync.replicas=2.
-replica.lag.time.max.ms=60000.
-replica.fetch.max.bytes=15728640.
+default.replication.factor=2.  
+min.insync.replicas=2.  
+replica.lag.time.max.ms=60000.  
+replica.fetch.max.bytes=15728640.  
 
 # Compression Configuration
-compression.type=snappy.
+compression.type=snappy.  
 
 # Network Configuration
-listeners=PLAINTEXT://192.168.1.238:9092.
-advertised.listeners=PLAINTEXT://192.168.1.238:9092,PLAINTEXT://192.168.1.236:9092,PLAINTEXT://192.168.1.165:9092.
+listeners=PLAINTEXT://192.168.1.238:9092.  
+advertised.listeners=PLAINTEXT://192.168.1.238:9092,PLAINTEXT://192.168.1.236:9092,PLAINTEXT://192.168.1.165:9092.  
 
 # Delete Topic Configuration
-delete.topic.enable=true.
+delete.topic.enable=true.  
 
 # Internal Topic Settings
-offsets.topic.replication.factor=2.
-transaction.state.log.replication.factor=2.
-transaction.state.log.min.isr=2.
+offsets.topic.replication.factor=2.  
+transaction.state.log.replication.factor=2.  
+transaction.state.log.min.isr=2.  
 
 # Group Coordinator Settings
-group.initial.rebalance.delay.ms=0.
+group.initial.rebalance.delay.ms=0.  
 
 # Zookeeper
-zookeeper.connect=192.168.1.238:2181.
-zookeeper.connection.timeout.ms=18000.
+zookeeper.connect=192.168.1.238:2181.  
+zookeeper.connection.timeout.ms=18000.  
 
