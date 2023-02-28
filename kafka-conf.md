@@ -1,4 +1,4 @@
-# log configuration kafka
+# LOG CONFIGURATION
 ```bash
 **log.dirs:** -This setting specifies the directories in which the Kafka broker will store its log files. You can specify multiple directories by separating them with commas.
 
@@ -35,7 +35,7 @@
 **log.cleanup.policy:** This setting specifies the log cleanup policy that should be used. The available options are "delete" and "compact".
 ```
 
-# NETWORK CONFIGURATION#
+# NETWORK CONFIGURATION
 ```bash
 
 **listeners:** This setting specifies the network interfaces and ports that the Kafka broker should listen on for connections. The format is "listener_name://host:port"
