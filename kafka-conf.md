@@ -34,7 +34,7 @@
 
 **log.cleanup.policy:** This setting specifies the log cleanup policy that should be used. The available options are "delete" and "compact".
 
-#NETWORK CONFIGURATION#
+# NETWORK CONFIGURATION#
 
 **listeners:** This setting specifies the network interfaces and ports that the Kafka broker should listen on for connections. The format is "listener_name://host:port"
 
@@ -72,7 +72,7 @@
 
 **ssl.truststore.password:** This setting specifies the password for the truststore file.
 
-#EXAMPLE#
+# EXAMPLE
  
  **listeners:** should be set to "PLAINTEXT://:9092" or "PLAINTEXT://your_host_name:9092"
 
