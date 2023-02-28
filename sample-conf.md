@@ -1,3 +1,4 @@
+```bash
 # Basics 
 broker.id=1.  
 num.network.threads=4.  
@@ -59,4 +60,4 @@ group.initial.rebalance.delay.ms=0.
 # Zookeeper
 zookeeper.connect=192.168.1.238:2181.  
 zookeeper.connection.timeout.ms=18000.  
-
+```
