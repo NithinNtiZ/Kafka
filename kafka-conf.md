@@ -1,5 +1,5 @@
 # LOG CONFIGURATION
-```bash
+
 - `**log.dirs:**` -This setting specifies the directories in which the Kafka broker will store its log files. You can specify multiple directories by separating them with commas.
 
 **log.retention.hours:** This setting specifies the number of hours for which log files will be retained. Once this time has passed, log files will be deleted.
@@ -33,7 +33,7 @@
 **log.cleaner.min.cleanable.ratio:** This setting specifies the minimum ratio of bytes that can be cleaned to the total log size for a log to be eligible for cleaning.
 
 **log.cleanup.policy:** This setting specifies the log cleanup policy that should be used. The available options are "delete" and "compact".
-```
+
 
 # NETWORK CONFIGURATION
 ```bash
