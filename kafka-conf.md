@@ -33,7 +33,7 @@
 - `**log.cleaner.min.cleanable.ratio:**` This setting specifies the minimum ratio of bytes that can be cleaned to the total log size for a log to be eligible for cleaning.
 
 - `**log.cleanup.policy:**` This setting specifies the log cleanup policy that should be used. The available options are "delete" and "compact".
-
+---
 
 # NETWORK CONFIGURATION   
 
@@ -72,6 +72,8 @@
 - `**ssl.truststore.location:**` This setting specifies the location of the truststore file to use for SSL/TLS connections.
 
 - `**ssl.truststore.password:**` This setting specifies the password for the truststore file.
+
+---
 
 # EXAMPLE
 
