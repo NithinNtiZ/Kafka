@@ -105,8 +105,9 @@
 
 ---
 
-"message.timestamp.difference.max.ms" is a configuration parameter in Apache Kafka that specifies the maximum difference allowed between the timestamp of a message and the broker's system time. When a message is produced to a Kafka topic, it is assigned a timestamp, which represents the time that the message was generated.
 
-The "message.timestamp.difference.max.ms" setting is used to enforce the validity of timestamps in messages, as timestamps that are too far in the future or in the past are considered to be invalid. If a message has a timestamp that exceeds the "message.timestamp.difference.max.ms" value, the message will be rejected by the broker.
+- `**message.timestamp.difference.max.ms**` is a configuration parameter in Apache Kafka that specifies the maximum difference allowed between the timestamp of a message and the broker's system time. When a message is produced to a Kafka topic, it is assigned a timestamp, which represents the time that the message was generated.
+
+The `message.timestamp.difference.max.ms` setting is used to enforce the validity of timestamps in messages, as timestamps that are too far in the future or in the past are considered to be invalid. If a message has a timestamp that exceeds the "message.timestamp.difference.max.ms" value, the message will be rejected by the broker.
 
 This setting is used to help ensure the consistency and accuracy of message timestamps in Apache Kafka, and it should be set based on your specific requirements for timestamp accuracy and the expected clock skew between your producers and brokers.
