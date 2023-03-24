@@ -1,6 +1,6 @@
 # LOG CONFIGURATION
 
-- `**log.dirs:**`` -This setting specifies the directories in which the Kafka broker will store its log files. You can specify multiple directories by separating them with commas.
+- `**log.dirs:**` -This setting specifies the directories in which the Kafka broker will store its log files. You can specify multiple directories by separating them with commas.
 
 - `**log.retention.hours:**` This setting specifies the number of hours for which log files will be retained. Once this time has passed, log files will be deleted.
 
@@ -72,6 +72,15 @@
 - `**ssl.truststore.location:**` This setting specifies the location of the truststore file to use for SSL/TLS connections.
 
 - `**ssl.truststore.password:**` This setting specifies the password for the truststore file.
+
+# OTHER
+
+`**fetch.max.wait.ms**` specifies the maximum amount of time (in milliseconds) that a Kafka broker will wait for additional messages to arrive from the producer before returning a response to the consumer. A higher value for fetch.max.wait.ms can reduce the number of requests made by the consumer to the Kafka broker, but it also means that there may be a longer delay in processing new messages. The default value for fetch.max.wait.ms is 500 milliseconds.   
+`**max.poll.interval.ms**` specifies the maximum amount of time (in milliseconds) that a consumer is allowed to go without making a call to the Kafka broker to fetch new messages. This is a safety mechanism to prevent long-running consumers from holding on to Kafka partitions for too long without processing any messages. If a consumer exceeds the max.poll.interval.ms time limit without fetching new messages, it will be considered failed and removed from the group. The default value for max.poll.interval.ms is 300000 milliseconds (5 minutes).
+
+Both fetch.max.wait.ms and max.poll.interval.ms can be configured to optimize the trade-off between responsiveness and efficiency for a given use case. For example, if low latency is critical for your application, you may want to reduce the value of fetch.max.wait.ms to ensure that messages are processed as quickly as possible. On the other hand, if you have a large number of consumers or a high volume of messages, you may want to increase the value of max.poll.interval.ms to avoid excessive rebalancing and partition assignment.
+
+
 
 ---
 
