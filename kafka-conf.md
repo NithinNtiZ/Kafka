@@ -122,3 +122,11 @@ Both fetch.max.wait.ms and max.poll.interval.ms can be configured to optimize th
 The `message.timestamp.difference.max.ms` setting is used to enforce the validity of timestamps in messages, as timestamps that are too far in the future or in the past are considered to be invalid. If a message has a timestamp that exceeds the "message.timestamp.difference.max.ms" value, the message will be rejected by the broker.
 
 This setting is used to help ensure the consistency and accuracy of message timestamps in Apache Kafka, and it should be set based on your specific requirements for timestamp accuracy and the expected clock skew between your producers and brokers.
+---
+Compression ratio: The compression ratio is the amount by which the size of the message is reduced after compression. Some compression algorithms, such as GZIP, provide higher compression ratios but may be slower than other algorithms. Other algorithms, such as Snappy, provide lower compression ratios but are faster.
+
+Compression speed: The compression speed is the time it takes to compress the message. Some algorithms, such as LZ4, are very fast but may not provide as high a compression ratio as other algorithms.
+
+Decompression speed: The decompression speed is the time it takes to decompress the message. Some algorithms, such as Snappy and LZ4, are very fast and can provide high decompression speeds.
+
+CPU usage: The compression and decompression process can be CPU-intensive, so it's important to consider the available CPU resources when choosing a compression algorithm.
